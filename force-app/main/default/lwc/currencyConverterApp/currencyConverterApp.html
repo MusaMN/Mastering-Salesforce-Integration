@@ -12,9 +12,9 @@
                         variant="label-hidden"
                         class="slds-m-vertical_x-large"
                     ></lightning-input>
-                    <div class="slds-grid slds-gutters">
-                        <div class="slds-col"><span>ddown1</span></div>
-                        <div class="slds-col">
+                    <div class="slds-grid slds-gutters baseline slds-m-vertical_x-large">
+                        <lightning-combobox name="countryFrom" label="From" variant="label-hidden" value={value} placeholder="Currency" options={countryList} onchange={handleChange}></lightning-combobox>
+                        <div class="slds-col slds-text-align_center">
                             <lightning-icon
                                 icon-name="action:change_record_type"
                                 alternative-text="change_record_type"
@@ -22,7 +22,7 @@
                                 title="Convert Icon"
                             ></lightning-icon>
                         </div>
-                        <div class="slds-col"><span>ddown2</span></div>
+                        <lightning-combobox name="countryTo" label="To" variant="label-hidden" value={value} placeholder="Currency" options={countryList} onchange={handleChange}></lightning-combobox>
                     </div>
                     <button
                         type="submit"
