@@ -2,3 +2,7 @@ node_modules
 .sfdx
 .vscode
 .config
+
+# Ignore Salesforce CLI internal state and cache files
+.sf/
+.sfdx/
