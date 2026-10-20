@@ -10,7 +10,7 @@
                         Currency Converter
                     </h1>
                     <img
-                        src="{currencyImage}"
+                        src={currencyImage}
                         alt="Currency Icon"
                         height="150"
                         width="150"
@@ -32,10 +32,10 @@
                             name="countryFrom"
                             label="From"
                             variant="label-hidden"
-                            value="{countryFrom}"
+                            value={countryFrom}
                             placeholder="Currency"
-                            options="{countryList}"
-                            onchange="{handleChange}"
+                            options={countryList}
+                            onchange={handleChange}
                         ></lightning-combobox>
                         </div>
                         <div class="slds-col slds-text-align_center">
@@ -44,6 +44,7 @@
                                 alternative-text="change_record_type"
                                 size="small"
                                 title="Convert Icon"
+                                class="custom-icon"
                             ></lightning-icon>
                         </div>
                         <div class="slds-col">
@@ -51,10 +52,10 @@
                             name="countryTo"
                             label="To"
                             variant="label-hidden"
-                            value="{countryTo}"
+                            value={countryTo}
                             placeholder="Currency"
-                            options="{countryList}"
-                            onchange="{handleChange}"
+                            options={countryList}
+                            onchange={handleChange}
                         ></lightning-combobox>
                         </div>
                     </div>
